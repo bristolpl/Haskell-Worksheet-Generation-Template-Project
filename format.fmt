@@ -1,0 +1,30 @@
+%format <*> = "\mathbin{\langle\!\ast\!\rangle}"
+%format <**> = "\mathbin{\langle\!**\!\rangle}"
+%format *> = "\mathbin{*\!\rangle}"
+%format **> = "\mathbin{**\!\rangle}"
+%format <* = "\mathbin{\langle\!*}"
+%format <** = "\mathbin{\langle\!**}"
+%format <$> = "\mathbin{\langle\$\rangle}"
+%format <$$> = "\mathbin{\langle\$\$\rangle}"
+%format <$ = "\mathbin{\langle\$}"
+%format <$$ = "\mathbin{\langle\$\$}"
+%format <|> = "\mathbin{\langle|\rangle}"
+%format inOp = "{in}^{\circ}"
+%format phi = "\varphi"
+%format forall = "\forall"
+%format exists = "\exists"
+%format :+:    = "\mathbin{\Varid{:\!\!+\!\!:}}"
+%format :*:    = "\mathbin{\Varid{:\!\!*\!\!:}}"
+%format :.:    = "\mathbin{\Varid{:\!\!\circ\!\!:}}"
+%format === = =
+\def\commentbegin{\quad\{\ }
+\def\commentend{\}}
+%format * = "\mathbin{\times}"
+%format exp a b = "{" a "}^{" b "}"
+%format . = "\mathbin{\cdot}"
+
+%format neg = not
+%format not = "\Varid{not}"
+
+%format <> = "\mathbin{\diamond}"
+

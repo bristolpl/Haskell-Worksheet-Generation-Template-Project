@@ -1,0 +1,41 @@
+\RequirePackage{fontspec}
+
+\newif\ifdyslexic
+\newif\ifhyperlegible
+\dyslexicfalse
+\hyperlegiblefalse
+
+\DeclareOption{dyslexic}{
+  \dyslexictrue
+  \hyperlegiblefalse
+}
+
+\DeclareOption{hyperlegible}{
+  \dyslexicfalse
+  \hyperlegibletrue
+}
+
+% by default we are hyperlegible
+\ExecuteOptions{hyperlegible}
+
+\ProcessOptions\relax
+
+\ifdyslexic
+    \setromanfont[
+    BoldFont=SylexiadSansMedium-Bold.ttf,
+    ItalicFont=SylexiadSansMedium-Italic.ttf,
+    BoldItalicFont=SylexiadSansMedium-BItalic.ttf
+    ]{SylexiadSansMedium.ttf}
+
+    \setmonofont{Inconsolata.ttf}
+\fi
+
+\ifhyperlegible
+  \setromanfont[
+    BoldFont=Atkinson-Hyperlegible-Bold-102.ttf,
+    ItalicFont=Atkinson-Hyperlegible-Italic-102.ttf,
+    BoldItalicFont=Atkinson-Hyperlegible-BoldItalic-102.ttf
+    ]{Atkinson-Hyperlegible-Regular-102.ttf}
+
+  \setmonofont{Inconsolata.ttf}
+\fi
